@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fqjr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0016-tenant/tkrw-pr714-0075-0016-app/devfile-sample-fqjr@sha256:74d8f01b3a5aa04cd12219f0ac6eb6bd3f8abd215230b29b495e142d3459af67
+        name: my-nodejs
+        resources: {}
+status: {}
